@@ -1,0 +1,152 @@
+        /* hoangNV 
+        PT15302-UD
+	    Created by hoangNV on 10/01/19.
+  		Copyright © 2019 HoangNV. All rights reserved. */
+
+
+
+#include <stdio.h>
+#include <conio.h>
+int main(){
+	int chooseGlass;
+	int chooseCPU;
+	int chooseRAM;
+	int chooseBattery;
+	int chooseCharger;
+	int tong;
+
+		//	TONG BAN DAU TRUOC KHI CHON SAN PHAM 
+	tong = 0;
+	
+		// Màn hình
+	
+	printf(" MAN HINH ");
+	printf("\n1. GorillaGlass3 (680K)" );
+	printf("\n2. GorillaGlass5(900K)" );
+	printf("\n3. Retina (1200K)");
+	printf("\nVUI LONG CHON LOAI MAN HINH (1-3):");
+	scanf("%d", &chooseGlass);
+    
+		switch (chooseGlass) {
+	 case 1:
+            printf(" Ban da chon GorillaGlass3 gia 680K\n ");
+            tong += 680;
+			break;
+     case 2:
+           printf("Ban da chon gorillaGlass5 gia 900K\n");
+    		tong += 900;
+            break;
+     case 3:
+     		printf("Ban da chon Retina gia 1200K \n");
+     		tong += 1200;
+			 break;
+     		
+        }
+        	
+//        	Chon CPU
+	printf("\nVUI LONG CHON LOAI CPU\n");
+	printf("\n1.A12");
+	printf("\n2.INTEL MOBILE 6");
+	printf("\n3.AMD X500 ");
+	printf("\nVUI LONG CHON LOAI CPU (1-3): ");
+	scanf("%d", &chooseCPU);
+    
+	switch (chooseCPU){
+	
+     case 1:
+            printf("Ban da chon CPU A12 gia 1300K\n");
+            tong += 1300;
+            break;
+     case 2:
+            printf("Ban da chon CPU IntelMobile6 gia 1250K\n");
+            tong += 1250;
+            break;
+     case 3: 
+     		printf("Ban da chon CPU AMDx500 gia 1370K\n");
+     		tong += 1370;
+     		break;
+			 }
+    
+    
+//     Chon RAM 
+    printf("\nVUI LONG CHON LOAI RAM");
+	printf("\n1.2GB 500K");
+	printf("\n2.4GB 900K");
+	printf("\n2.8GB 1500K ");
+	printf("\nVUI LONG CHON LOAI RAM (1-3): ");
+	scanf("%d", &chooseRAM);
+	
+	switch (chooseRAM){
+	
+     case 1:
+            printf("Ban da chon dung luong RAM la 2GB gia 500k\n");
+            tong += 500;
+            break;
+     case 2:
+            printf("Ban da chon dung luong RAM la 4GB gia 900k\n");
+            tong += 900;
+            break;
+     case 3: 
+     	printf("Ban da chon dung luong RAM la 8GB gia 1500k\n");
+     	tong += 1500;
+     	break;
+     }
+    
+//  		CHON DUNG LUONG PIN
+
+ 	printf("\nVUI LONG CHON DUNG LUONG PIN");
+	printf("\n1.2500MAH 460K");
+	printf("\n2.3100MAH 700K");
+	printf("\n2.4200MAH 930K ");
+	printf("\nVUI LONG CHON LOAI RAM (1-3): ");
+	scanf("%d", &chooseBattery);
+	
+	switch (chooseRAM){
+	
+     case 1:
+            printf("Ban da chon dung luong Pin la 2500mah gia 460K\n");
+            tong += 460;
+            break;
+     case 2:
+            printf("Ban da chon dung luong Pin la 3100mah gia 700K\n");
+            tong += 700;
+            break;
+     case 3: 
+     	printf("Ban da chon dung luong Pin la  4200mah gia 930K\n");
+     	tong += 930;
+     	break;
+     }
+
+
+//  Chon bo sac
+ 
+ 	printf("\nVUI LONG CHON BO SAC");
+	printf("\n1.APPLE (850k)");
+	printf("\n2.SAMSUNG (520k)");
+	printf("\n2.SONY (720k) ");
+	printf("\nVUI LONG CHON  (1-3): ");
+	scanf("%d", &chooseCharger);
+	
+	switch (chooseCharger){
+	
+     case 1:
+            printf("Ban da chon bo sac APPLE gia 850K\n");
+            tong += 850;
+            break;
+     case 2:
+            printf("Ban da chon  bo sac SAMSUNG gia  520K\n");
+            tong += 520;
+            break;
+    case 3: 
+     	printf("Ban da chon bo sac SONY gia  720K\n");
+     	tong += 720;
+     	break;
+     	
+     }
+ 	
+ 
+ 	printf("TONG SO TIEN PHAI CHI LA: %d\n", tong);
+       
+       return 0;
+       getch();
+}
